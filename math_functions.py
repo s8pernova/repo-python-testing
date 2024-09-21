@@ -2,6 +2,8 @@
 This file has a lot of math functions in it
 """
 
+numbers = [50, 2, 3, 43, 89]
+
 def factorial(num) -> int:
     """
     Factorial a number
@@ -12,9 +14,18 @@ def factorial(num) -> int:
     elif num <= 0:
         return None
     else:
-        for x in range(2, num + 1):
-            result *= x
+        for i in range(2, num + 1):
+            result *= i
         return result
 
-def power(num, power) -> int:
-    return num ** power
+def average(list) -> float:
+    """
+    Find the average in a list of numbers
+    """
+    sum = 0
+    for i in range(len(list)):
+        sum += list[i - 1]
+    
+    return sum / len(list)
+
+print(average(numbers))
