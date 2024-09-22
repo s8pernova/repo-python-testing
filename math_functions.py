@@ -16,5 +16,8 @@ def factorial(num) -> int:
             result *= x
         return result
 
-def power(num, power) -> int:
-    return num ** power
+def find_slope(x1, y1, x2, y2) -> float:
+    """
+    Find the slope of two points
+    """
+    return (y2 - y1) / (x2 - x1)
