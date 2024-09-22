@@ -18,7 +18,12 @@ def factorial(num) -> int:
             result *= i
         return result
 
-<<<<<<< HEAD
+def find_slope(x1, y1, x2, y2) -> float:
+    """
+    Find the slope of two points
+    """
+    return (y2 - y1) / (x2 - x1)
+
 def average(list) -> float:
     """
     Find the average in a list of numbers
@@ -28,12 +33,3 @@ def average(list) -> float:
         sum += list[i - 1]
     
     return sum / len(list)
-
-print(average(numbers))
-=======
-def find_slope(x1, y1, x2, y2) -> float:
-    """
-    Find the slope of two points
-    """
-    return (y2 - y1) / (x2 - x1)
->>>>>>> a0018f205aed3870a60341bf705b5344bac4b4ae
