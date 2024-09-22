@@ -33,3 +33,6 @@ def average(list) -> float:
         sum += list[i - 1]
     
     return sum / len(list)
+
+if __name__ == "__main__":
+    print("Hello world")
